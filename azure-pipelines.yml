@@ -28,9 +28,9 @@ steps:
   inputs:
    command: publish
    #publishWebProjects:false
-   #projects:'src/SimpleAPI/SimpleAPI.csproj'
-   #arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
-   #zipafterPublish:true
+   projects:'src/SimpleAPI/SimpleAPI.csproj'
+   arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+   zipafterPublish:true
 
 - task: PublishBuildArtifacts@1
   displayName: 'publish artifacts'
